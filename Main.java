@@ -39,6 +39,8 @@ public class Main {
             
             firstvisitor.st.printoffsets();
 
+            MyVisitor2 secondvisitor = new MyVisitor2(firstvisitor);
+
             VTable vt = new VTable(firstvisitor.st);
         
             vt.print();
