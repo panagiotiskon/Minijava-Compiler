@@ -1,4 +1,4 @@
-
+This project is part of a semester assignment the design and specification of which is described down below: 
 
 ![Compilers - Project1024_1](https://user-images.githubusercontent.com/48532935/179288673-cb6798b7-7388-4779-a1b5-c00b33a44aff.jpg)
 ![Compilers - Project1024_2](https://user-images.githubusercontent.com/48532935/179288672-ade07005-4895-41e0-94ad-4e728bc36ce0.jpg)
