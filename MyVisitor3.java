@@ -1886,7 +1886,7 @@ String array_helper=null;
       String array[] = s.split("new");
       MessageSendItem=array[1];
    }
-   System.out.println(MessageSendItem+methodname);
+   //System.out.println(MessageSendItem+methodname);
    String method_type=llvmType(st.ClassCollector.get(MessageSendItem).getMethodType(methodname));
 
    

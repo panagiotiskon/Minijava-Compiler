@@ -36,16 +36,16 @@ public class Main {
             MyVisitor firstvisitor = new MyVisitor();
 
             root.accept(firstvisitor, null);
-            
+            System.out.println("The Offsets are:\n");
             firstvisitor.st.printoffsets();
+            System.out.println("----------------\n");
 
             MyVisitor2 secondvisitor = new MyVisitor2(firstvisitor);
 
             VTable vt = new VTable(firstvisitor.st);
         
-            vt.print();
-
-
+            //vt.print();   //prints VTables
+            
             String a[] = file.split(".java");
             String llname = a[0]+".ll";
             File llfile = new File(llname);
