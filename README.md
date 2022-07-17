@@ -1,8 +1,8 @@
 ## Getting Started:
 This project is part of a semester assignment the design and specification of which is described down below.
 The assignment consists of two parts.<br /><br />
-Part1: MiniJava Static Checking (Semantic Analysis)<br />
-Part2: Generating intermediate code (MiniJava -> LLVM)
+Part 1: MiniJava Static Checking (Semantic Analysis)<br />
+Part 2: Generating intermediate code (MiniJava -> LLVM)
 ## **Important Note:**
 The IR Generator is not complete and it only works with some examples.
 ## Project Description:
