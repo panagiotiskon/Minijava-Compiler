@@ -477,15 +477,13 @@ class ClassInfo{
         return "";  
         }
     public String printoffsets(){
+        System.out.println("-----Class: "+ Classname+"------\n");
 
-        System.out.println("-----Variables-----");
-        System.out.println();
+        System.out.println("-------Variables-------\n");
         for(String key: VarOffsets.keySet()){
             System.out.println(Classname+"."+key+"="+VarOffsets.get(key));
         }
-        System.out.println("----Methods-----");
-        System.out.println();
-
+        System.out.println("-------Methods---------\n");
         for(String key: MethodOffsets.keySet()){
             System.out.println(Classname+"."+key+"="+MethodOffsets.get(key));
         }

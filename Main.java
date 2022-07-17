@@ -36,7 +36,7 @@ public class Main {
             MyVisitor firstvisitor = new MyVisitor();
 
             root.accept(firstvisitor, null);
-            System.out.println("The Offsets are:\n");
+            System.out.println("-----The Offsets are:-----\n");
             firstvisitor.st.printoffsets();
             System.out.println("----------------\n");
 
@@ -55,9 +55,13 @@ public class Main {
             else
                 System.out.println("File already exists");
 
+            System.out.println("\n---Intermediate Code Generation Started---\n");
+            
             MyVisitor3 thirdvisitor = new MyVisitor3(llfile, firstvisitor);
             
             root.accept(thirdvisitor, null);
+
+            System.out.println("---Intermediate Code Generation Finished---");
 
             thirdvisitor.closeFile();
 
