@@ -33,16 +33,16 @@ public class Main {
             System.err.println("-----Program parsed successfully.-------");
             System.out.println();
 
-            MyVisitor firstvisitor = new MyVisitor();
+            MyVisitor firstvisitor = new MyVisitor();  //fill the symboltable and do some basic type checking
 
             root.accept(firstvisitor, null);
             System.out.println("-----The Offsets are:-----\n");
-            firstvisitor.st.printoffsets();
+            firstvisitor.st.printoffsets();          //print offsets
             System.out.println("----------------\n");
 
-            MyVisitor2 secondvisitor = new MyVisitor2(firstvisitor);
+            MyVisitor2 secondvisitor = new MyVisitor2(firstvisitor);    //do a complete semantic analysis based on the symboltable from the first visitor
 
-            VTable vt = new VTable(firstvisitor.st);
+            VTable vt = new VTable(firstvisitor.st);        //create Virtual tables from the symboltable of the first visitor
         
             //vt.print();   //prints VTables
             
@@ -59,7 +59,7 @@ public class Main {
             
             MyVisitor3 thirdvisitor = new MyVisitor3(llfile, firstvisitor);
             
-            root.accept(thirdvisitor, null);
+            root.accept(thirdvisitor, null);        //create Intermediate Code
 
             System.out.println("---Intermediate Code Generation Finished---");
 
