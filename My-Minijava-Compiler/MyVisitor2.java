@@ -1,3 +1,4 @@
+
 //PANAGIOTIS KONTOEIDIS
 //1115201900266
 import syntaxtree.*;
@@ -5,7 +6,6 @@ import visitor.*;
 
 import java.lang.reflect.Method;
 import java.util.*;
-
 
 public class MyVisitor2  extends GJDepthFirst<String, Void>{
     SymbolTable st;
