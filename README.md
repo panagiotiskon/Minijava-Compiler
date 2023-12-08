@@ -5,7 +5,7 @@ The assignment consists of two parts.
 - MiniJava Static Checking (Semantic Analysis)<br />
 - Generating intermediate code (MiniJava -> LLVM)
 
-      The IR Generator is partly completed.
+The IR Generator is partly completed.
 
 ## Project Description:
 ![Compilers, University of Athens - Project1024_1](https://user-images.githubusercontent.com/48532935/179289852-c5a86fe3-cb9e-42d7-a886-649d222b8244.jpg)
